@@ -10,7 +10,8 @@ public class PrimeiraClasseSelenium {
     public void testeAberturaBrowser(){
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.qaacademy.com.br");
+        driver.get("https://qaacademy.com.br");
+        
     }
     
 }
