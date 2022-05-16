@@ -14,7 +14,7 @@ public class ExerciciosSelenium {
     static WebDriver driver;
 
     @Test    
-    public void preencheFormulario(){
+    public void preencheFormulario(cle){
 
         driver = new ChromeDriver();
         driver.get("file:///C:/Users/Leandro/Desktop/Register.html");
