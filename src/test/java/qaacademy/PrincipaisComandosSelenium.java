@@ -14,8 +14,7 @@ public class PrincipaisComandosSelenium {
         Thread.sleep(3000); //Espera de 3 segundos
         driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/button[1]")).click(); //localiza o cookie  e clica em aceitar
         Thread.sleep(1000); // Espera 1 segundo
-        driver.findElement(By.xpath("//*[@id='img_1_comp-k0wqferu']/img")).click();//clica no botão do linkedin    
-           
+        driver.findElement(By.xpath("//*[@id='img_1_comp-k0wqferu']/img")).click();//clica no botão do linkedin             
     }
     
     @Test
