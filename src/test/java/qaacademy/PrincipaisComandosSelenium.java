@@ -23,6 +23,7 @@ public class PrincipaisComandosSelenium {
         
         WebDriver driver = new ChromeDriver(); 
         driver.get("https://qaacademy.com.br"); 
+        driver.manage().window().maximize();// maximiza a tela
         Thread.sleep(3000); 
         driver.findElement(By.xpath("/html/body/div[2]/div/div/div[1]/button[1]")).click(); //localiza o cookie e clica em aceitar
         driver.findElement(By.xpath("//*[@id='comp-k7g9c7sd3label']")).click();//clica no botão CONTATO          
@@ -31,8 +32,9 @@ public class PrincipaisComandosSelenium {
         driver.findElement(By.xpath("//*[@placeholder='Email']")).click();// clica no campo email
         Thread.sleep(1000); //Espera de 1 segundos
         driver.findElement(By.xpath("//*[@placeholder='Email']")).sendKeys("munhoz@gmail.com"); //preenche o campo com o email
+        Thread.sleep(1000); //Espera de 1 segundos
         driver.findElement(By.xpath("//*[@id='comp-k37gdiro']/button")).click(); // clica no botão enviar        
-
+        driver.quit();
     }
     
 }
